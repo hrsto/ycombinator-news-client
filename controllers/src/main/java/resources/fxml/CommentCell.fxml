@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<fx:root alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: rgb(221, 152, 23); -fx-border-width: 0 0 0 2;" styleClass="setTransparent" type="VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="30.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: rgb(221, 152, 23);" styleClass="normalBg">
+         <children>
+            <Label fx:id="author" maxWidth="1.7976931348623157E308" text="by: Someone" textFill="#f3f3f3" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="dateCreated" text="from: Some long date" textFill="#f3f3f3" />
+         </children>
+      </HBox>
+      <Label fx:id="commentText" lineSpacing="1.2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="normalBg" text="Label" textFill="#f3f3f3" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+   </children>
+</fx:root>

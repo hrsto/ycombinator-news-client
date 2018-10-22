@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+   http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+   
+   <persistence-unit name="top-stories" transaction-type="RESOURCE_LOCAL">
+   
+      <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+      <class>com.webarity.entities.Message</class>
+      <class>com.webarity.entities.Comment</class>
+      <class>com.webarity.entities.Article</class>
+
+      <properties>
+        <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
+        <property name="eclipselink.logging.level" value="FINE"/>
+        <property name="eclipselink.ddl-generation" value="create-tables"/>
+
+        <property name="javax.persistence.schema-generation.database.action" value="create"/>
+        <property name="javax.persistence.schema-generation.create-source" value="script"/>
+        <property name="javax.persistence.schema-generation.create-script-source" value="init/db.sql" />
+        <property name="hibernate.hbm2ddl.import_files_sql_extractor" value="org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor" />
+
+        <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+
+        <!-- <property name="hibernate.show_sql" value="true"/>
+        <property name="hibernate.format_sql" value="true"/>
+        <property name="hibernate.use_sql_comments" value="true"/> -->
+      </properties>
+      
+   </persistence-unit>
+</persistence>

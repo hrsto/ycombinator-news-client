@@ -1,0 +1,124 @@
+.root {
+    -fx-common-border-color: rgb(194, 194, 194);
+}
+.setTransparent {
+    -fx-background-color: rgba(63,63,63,0.7);
+}
+.windowControl {
+    -fx-spacing: 7px;
+}
+.windowControl > .windowControlButtons:hover {
+    -fx-cursor: hand;
+}
+#appMaximizeButton:hover, #appMinimizeButton:hover {
+    -fx-background-color:rgb(221, 152, 23);
+}
+#appCloseButton:hover {
+    -fx-background-color:rgb(221, 23, 23);
+}
+#appMaximizeButton {
+    -fx-shape: 'M98.5,113,102,94.3l3.1,8.3,10.1-10.1-8.3-3.1L125.5,86,122,104.7l-3.1-8.3-10.1,10.1,8.3,3.1Z';
+    
+}
+#appCloseButton {
+    -fx-shape: 'M85.3,56l-9,9L89.8,78.5,76.3,92l9,9L98.8,87.5,112.3,101l9-9L107.8,78.5,121.3,65l-9-9L98.8,69.5,85.3,56Z';
+}
+#appMinimizeButton {
+    -fx-shape: 'M120.6,100.3H89.3V93.9h14.2L92.8,78.3l9,4.2v-14h6.4v14l9-4.2L106.4,93.9h14.2Z';
+}
+.windowControlButtons {
+    -fx-background-color:#7e7e7e;
+}
+.button {
+    -fx-background-color: rgb(63, 63, 63);
+    -fx-text-fill: rgb(243, 243, 243);
+    -fx-background-radius: 50;
+}
+#titleBar > *, .normalBg {
+    -fx-background-color: rgba(63,63,63,0.90);
+    -fx-padding: 10px;
+}
+#titleBar {
+    -fx-spacing: 5;
+}
+#titlebarStackPane {
+    -fx-padding: 0;
+}
+#titlebarStackPane .progress-bar:determinate .track {
+    -fx-background-color: transparent;
+}
+#titlebarStackPane .progress-bar:determinate .bar {
+    -fx-background-color: rgba(221, 152, 23, 0.7);
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+#articlesTable *.scroll-bar *.increment-button, 
+#articlesTable *.scroll-bar *.decrement-button,
+#articlesTable *.scroll-bar *.increment-arrow, 
+#articlesTable *.scroll-bar *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+#articlesTable *.scroll-bar *.increment-arrow, 
+#articlesTable *.scroll-bar *.decrement-arrow {
+    -fx-shape: null;
+}
+#articlesTable {
+    -fx-background-insets: 0;
+    -fx-background-color: rgba(63,63,63,0.33);
+}
+.tableColumn {
+    -fx-font-size: 10px;
+}
+.table-cell {
+    -fx-alignment: center;
+    -fx-font-size: 23px;
+    -fx-padding: 0;
+    -fx-background-color: rgba(63,63,63,0.07);
+    -fx-border-width: 0 1 0 1;
+    -fx-border-insets: 0 0 0 -1;
+    -fx-text-fill: #f3f3f3;
+    -fx-border-color: -fx-common-border-color;
+}
+.table-row {
+    -fx-border-style: solid;
+    -fx-border-width: 1 0 1 0;
+    -fx-border-insets: -1 0 0 0;
+    -fx-border-color: -fx-common-border-color;
+    -fx-background-color: rgba(63, 63, 63, 0.95);
+}
+.table-row:selected {
+    -fx-background-color: rgb(26, 26, 26);
+}
+.table-row:selected .table-cell {
+    -fx-text-fill: #f3f3f3;
+    -fx-opacity: 1;
+}
+.table-row:read {
+    -fx-opacity: 0.8;
+}
+.slider .axis {
+    -fx-tick-label-fill: #f3f3f3;
+    -fx-tick-label-font-weight: bold;
+    -fx-tick-label-font-size: 1em;
+}
+#saveButton {
+    -fx-background-radius: 0;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+#saveButton:hover {
+    -fx-background-color: #3f3f3f;
+    -fx-text-fill: #f3f3f3;
+}
+#saveButton {
+    -fx-background-color: rgb(221, 23, 23);
+    
+}
+#saveButton:dbActive {
+    -fx-background-color: #2b7fdf;
+    -fx-cursor: null;
+}
