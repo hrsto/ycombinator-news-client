@@ -12,7 +12,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <java.version>10</java.version>
+    <java.version>11</java.version>
     <global.groupid>com.webarity</global.groupid>
     <major.version>1.0-SNAPSHOT</major.version>
   </properties>
