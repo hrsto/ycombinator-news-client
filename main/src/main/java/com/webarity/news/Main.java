@@ -19,7 +19,10 @@ import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.scene.Scene;
 import javafx.stage.DirectoryChooser;
+import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
+
 
 /**
  * 
@@ -43,7 +46,7 @@ public class Main extends Application {
     }
     
     @Override
-    public void start(javafx.stage.Stage s) {
+    public void start(Stage s) {
         hs = getHostServices();
 
         state.setMainStage(s);

@@ -2,13 +2,13 @@ package com.webarity.controllers;
 
 import java.io.IOException;
 
-import com.webarity.entities.Article;
-import com.webarity.entities.Message;
 import com.webarity.controllers.events.InitDatabaseEvent;
 import com.webarity.controllers.events.PopulateTableEvent;
 import com.webarity.controllers.support.CommentCellFactory;
 import com.webarity.controllers.support.CommentColumnFactory;
 import com.webarity.controllers.support.TableRowFactory;
+import com.webarity.entities.Article;
+import com.webarity.entities.Message;
 
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.LongProperty;
@@ -48,7 +48,9 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 /**
- * <p>Main window of the app, as loaded by the fxml file.</p>
+ * <p>
+ * Main window of the app, as loaded by the fxml file.
+ * </p>
  */
 public class MainStage extends AnchorPane {
     
